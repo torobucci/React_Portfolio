@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Inside your Tailwind CSS file or in your HTML style tag */
+.group-before, .group-after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -2px;
+  }
+
+  .group-before {
+    background-color: #3f4551;
+    width: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .group-after {
+    background-color: #fec544;
+    width: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+/* YourComponent.css */
+
+.carousel button{
+  display: none !important;
+}
+
+.active{
+  color: #fec544;
+}
+
+.slick-list{
+   max-width: 70rem;
+}
+.slick-track{
+  overflow: hidden;
+}
+
+.slick-dots{
+  bottom: -35px;
+}
+
+.slick-dots li{
+  height: 12px;
+  width: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all .6s ease-in-out;
+  background-color: black;
+}
+.slick-dots li button::before{
+  content: '';
+}
+.slick-dots .slick-active{
+  background-color: #3f4551;
+}

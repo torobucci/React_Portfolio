@@ -1,5 +1,7 @@
 import toro from "../assets/torobucci.jpg";
 import resume from "../assets/resume.pdf"
+import Services from "./Services";
+import Skills from "./Skills";
 
 const About = () => {
   return (
@@ -20,7 +22,7 @@ const About = () => {
           <img
             src={toro}
             alt=""
-            className="contain lg:min-w-[420px] lg:max-w-[700px] lg:max-h-[650px] lg:ml-4  min-h-[256px] mb-[30px]"
+            className="contain lg:max-w-[700px] lg:max-h-[650px] lg:ml-4  min-h-[256px] mb-[30px]"
           />
           <div className="flex flex-col gap-[18px] max-w-[520px] lg:self-start">
             <h2 className="text-[36px] font-[400] text-[#fdfeff] leading-[1.2em]">
@@ -30,18 +32,12 @@ const About = () => {
               Full-stack developer
             </h3>
             <p className="font-[400] text-[14px] text-[#a9adb8] leading-[1.6em]">
-              I am a Visual Designer with a strong focus on digital branding.
-              Visul design seeks to attract, inspire, create desires and
-              motivate people to respond to messages, with a view to making a
-              favorable impact.
+              I really enjoy playing chess because it's not just a game to me. It's about thinking critically and planning strategies to win. This kind of thinking is similar to what I discovered in my computer science degree, and it sparked my interest in software development. Now, I'm a full-stack web developer, and I absolutely love it! I'm excited about turning your ideas into reality
             </p>
             <ul className="flex flex-col gap-[14px] font-[400] text-[14px] text-[#a9adb8] leading-[1.6em]">
-              <li>Birthday : May 07, 1990</li>
-              <li>Birthday : May 07, 1990</li>
-              <li>Birthday : May 07, 1990</li>
-              <li>Email : devis@example.com</li>
-              <li>Birthday : May 07, 1990</li>
-              <li>Birthday : May 07, 1990</li>
+              <li>Hobbies : Swimming, Running, Writing blogs</li>
+              <li>Birth Month : October </li>
+              <li>DayDreams : Sky diving, Skiing, Rollercoster rides</li>
             </ul>
             <a href={resume} target="_blank"  download="Resume - Kevin Toro" className="bg-yellowish mt-[43px] rounded-3xl text-[#070d1b] text-[14px] px-[0.72em] py-[0.8em] w-[170px] transition-all ease-in-out duration-[0.4s] hover:translate-y-[-1px] hover:shadow-btn text-center">
               Download CV
@@ -49,6 +45,8 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Services />
+      <Skills />
     </section>
   );
 };

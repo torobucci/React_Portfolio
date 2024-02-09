@@ -17,31 +17,31 @@ const Home = () => {
           </p>
           <div className="flex flex-row gap-4">
             <a
-              href=""
+              href="https://github.com/torobucci"
+              target="_blank"
               className="text-[20px] p-2.5 rounded-full border-2 border-white border-opacity-10 hover:border-opacity-[0.6] font-light text-[#a9adb8] hover:text-white hover:text-opacity-[0.9]"
             >
-              {" "}
               <IoLogoGithub />
             </a>
             <a
-              href=""
+              href="https://www.linkedin.com/in/kevin-toroitich/"
+              target="_blank"
               className="text-[20px] p-2.5 rounded-full border-2 border-white border-opacity-10 hover:border-opacity-[0.6] font-light text-[#a9adb8] hover:text-white hover:text-opacity-[0.9]"
             >
-              {" "}
               <FaLinkedinIn />
             </a>
             <a
-              href=""
+              href="https://wellfound.com/u/kevin-toro-2"
+              target="_blank"
               className="text-[20px] p-2.5 rounded-full border-2 border-white border-opacity-10 hover:border-opacity-[0.6] font-light text-[#a9adb8] hover:text-white hover:text-opacity-[0.9]"
             >
-              {" "}
               <FaAngellist />
             </a>
             <a
-              href=""
+              href="https://medium.com/@kevintoro254"
+              target="_blank"
               className="text-[20px] p-2.5 rounded-full border-2 border-white border-opacity-10 hover:border-opacity-[0.6] font-light text-[#a9adb8] hover:text-white hover:text-opacity-[0.9]"
             >
-              {" "}
               <FaMedium />
             </a>
           </div>

@@ -41,6 +41,7 @@
 }
 .slick-track{
   overflow: hidden;
+  min-width:100em !important ;
 }
 
 .slick-dots{
@@ -60,4 +61,21 @@
 }
 .slick-dots .slick-active{
   background-color: #3f4551;
+}
+
+.popup-slider .slick-dots{
+  bottom: -26px;
+}
+
+.popup::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 100vh;
+}
+
+.popup::-webkit-scrollbar-track {
+  background: #eee;
 }

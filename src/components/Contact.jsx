@@ -1,8 +1,14 @@
-import { IoIosMail } from "react-icons/io";
+import { FaEnvelope } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdLocationPin } from "react-icons/md";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaAngellist } from "react-icons/fa6";
+import { FaMedium } from "react-icons/fa6";
+import { FaQuora } from "react-icons/fa";
 const Contact = () => {
   return (
     <section id="contact">
-      <div className="pb-[100px]">
+      <div className="pb-[100px] pt-20">
         <div className="text-[24px] uppercase w-full text-center mb-14 relative ">
           <h4 class="font-medium text-[#fec544] relative group p-3 z-10 uppercase">
             Contact
@@ -62,55 +68,55 @@ const Contact = () => {
             <h3 className="text-[30px] font-normal text-[#fdfeff]">
               Contact Info
             </h3>
-            <p className="text-[14px] text-[#a9adb8]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
-              fugit dolorem consequuntur numquam{" "}
+            <p className="text-[16px] text-[#a9adb8]">
+              Reach me out in the method of your choice 😃.
             </p>
             <div className="flex flex-col gap-4">
-              <div className="flex gap-[20px]">
-                <i class="fa-solid fa-envelope self-center text-[#a9adb8] p-4 rounded-full border-[0.5px] border-[#3f4551] hover:border-yellowish"></i>
+              <div className="flex gap-[20px] group">
+                <div className="text-[20px] self-center text-[#a9adb8] p-4 rounded-full border-[0.5px] border-[#3f4551] group-hover:border-yellowish">
+                  <FaEnvelope />
+                </div>
+
                 <div className="flex flex-col gap-[4px]">
                   <h3 className="capitalize text-[#fdfeff] text-[20px]">
                     email
                   </h3>
                   <div>
+                    <a href="mailto:kevintoro254@gmail.com" className="text-[14px] text-[#a9adb8] hover:text-yellowish">
+                       kevintoro254@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-[20px] group">
+                <div className="text-[20px] self-center text-[#a9adb8] p-4 rounded-full border-[0.5px] border-[#3f4551] group-hover:border-yellowish">
+                  <FaPhoneAlt />
+                </div>
+                <div className="flex flex-col gap-[4px]">
+                  <h3 className="capitalize text-[#fdfeff] text-[20px]">
+                    Phone
+                  </h3>
+                  <div>
                     <p className="text-[14px] text-[#a9adb8]">
-                      Lorem ipsum dolor sit amet, consectetu
-                    </p>
-                    <p className="text-[14px] text-[#a9adb8]">
-                      Lorem ipsum dolor sit amet, consectetu
+                      +254798555929
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="flex gap-[20px]">
-                <i class="fa-solid fa-envelope self-center text-[#a9adb8] p-4 rounded-full border-[0.5px] border-[#3f4551] hover:border-yellowish"></i>
-                <div className="flex flex-col gap-[4px]">
-                  <h3 className="capitalize text-[#fdfeff] text-[20px]">
-                    email
-                  </h3>
-                  <div>
-                    <p className="text-[14px] text-[#a9adb8]">
-                      Lorem ipsum dolor sit amet, consectetu
-                    </p>
-                    <p className="text-[14px] text-[#a9adb8]">
-                      Lorem ipsum dolor sit amet, consectetu
-                    </p>
-                  </div>
+              <div className="flex gap-[20px] group">
+                <div className="text-[20px] self-center text-[#a9adb8] p-4 rounded-full border-[0.5px] border-[#3f4551] group-hover:border-yellowish">
+                  <MdLocationPin />
                 </div>
-              </div>
-              <div className="flex gap-[20px]">
-                <i class="fa-solid fa-envelope self-center text-[#a9adb8] p-4 rounded-full border-[0.5px] border-[#3f4551] hover:border-yellowish"></i>
                 <div className="flex flex-col gap-[4px]">
                   <h3 className="capitalize text-[#fdfeff] text-[20px]">
-                    email
+                    Address
                   </h3>
                   <div>
                     <p className="text-[14px] text-[#a9adb8]">
-                      Lorem ipsum dolor sit amet, consectetu
+                      P.O BOX 10 20157 Kabarak,
                     </p>
                     <p className="text-[14px] text-[#a9adb8]">
-                      Lorem ipsum dolor sit amet, consectetu
+                        Nakuru, Kenya
                     </p>
                   </div>
                 </div>
@@ -121,36 +127,36 @@ const Contact = () => {
                 Visite my social profile and get connected
               </p>
               <div className="flex gap-[20px]">
-                <a className="flex justify-center items-center rounded-[50px] overflow-hidden border-[0.5px] border-[#3f4551] transition-all duration-[0.4s] ease-in-out hover:pr-[15px] group">
-                  <span className="flex justify-center items-center rounded-[50px] w-[50px] h-[50px]">
-                    <i class="fa-solid fa-envelope text-[#a9adb8] text-[22px]"></i>
+                <a href="https://www.linkedin.com/in/kevin-toroitich/" target="_blank" className="cursor-pointer flex justify-center items-center rounded-[50px] overflow-hidden border-[0.5px] border-[#3f4551] transition-all duration-[0.4s] ease-in-out hover:pr-[15px] group">
+                  <span className="flex justify-center items-center rounded-[50px] w-[50px] h-[50px] text-[#a9adb8] text-[22px]">
+                    <FaLinkedinIn />
                   </span>
                   <span className="max-w-0 font-semibold overflow-hidden transition-all duration-[0.4s] ease-in-out text-[#fdfeff] group-hover:max-w-[140px]">
-                    Email
+                    LinkedIn
                   </span>
                 </a>
-                <a className="flex justify-center items-center rounded-[50px] overflow-hidden border-[0.5px] border-[#3f4551] transition-all duration-[0.4s] ease-in-out hover:pr-[15px] group">
-                  <span className="flex justify-center items-center rounded-[50px] w-[50px] h-[50px]">
-                    <i class="fa-solid fa-envelope text-[#a9adb8] text-[22px]"></i>
+                <a href="https://wellfound.com/u/kevin-toro-2" target="_blank" className="cursor-pointer flex justify-center items-center rounded-[50px] overflow-hidden border-[0.5px] border-[#3f4551] transition-all duration-[0.4s] ease-in-out hover:pr-[15px] group">
+                  <span className="flex justify-center items-center rounded-[50px] w-[50px] h-[50px] text-[#a9adb8] text-[22px]">
+                    <FaAngellist />
                   </span>
                   <span className="max-w-0 font-semibold overflow-hidden transition-all duration-[0.4s] ease-in-out text-[#fdfeff] group-hover:max-w-[140px]">
-                    Email
+                    WellFound
                   </span>
                 </a>
-                <a className="flex justify-center items-center rounded-[50px] overflow-hidden border-[0.5px] border-[#3f4551] transition-all duration-[0.4s] ease-in-out hover:pr-[15px] group">
-                  <span className="flex justify-center items-center rounded-[50px] w-[50px] h-[50px]">
-                    <i class="fa-solid fa-envelope text-[#a9adb8] text-[22px]"></i>
+                <a href="https://medium.com/@kevintoro254" target="_blank" className="cursor-pointer flex justify-center items-center rounded-[50px] overflow-hidden border-[0.5px] border-[#3f4551] transition-all duration-[0.4s] ease-in-out hover:pr-[15px] group">
+                  <span className="flex justify-center items-center rounded-[50px] w-[50px] h-[50px] text-[#a9adb8] text-[22px]">
+                    <FaMedium />
                   </span>
                   <span className="max-w-0 font-semibold overflow-hidden transition-all duration-[0.4s] ease-in-out text-[#fdfeff] group-hover:max-w-[140px]">
-                    Email
+                    Medium
                   </span>
                 </a>
-                <a className="flex justify-center items-center rounded-[50px] overflow-hidden border-[0.5px] border-[#3f4551] transition-all duration-[0.4s] ease-in-out hover:pr-[15px] group">
-                  <span className="flex justify-center items-center rounded-[50px] w-[50px] h-[50px]">
-                    <i class="fa-solid fa-envelope text-[#a9adb8] text-[22px]"></i>
+                <a href="https://www.quora.com/profile/Kevin-Toro-7" target="_blank" className="cursor-pointer flex justify-center items-center rounded-[50px] overflow-hidden border-[0.5px] border-[#3f4551] transition-all duration-[0.4s] ease-in-out hover:pr-[15px] group">
+                  <span className="flex justify-center items-center rounded-[50px] w-[50px] h-[50px] text-[#a9adb8] text-[22px]">
+                    <FaQuora />
                   </span>
                   <span className="max-w-0 font-semibold overflow-hidden transition-all duration-[0.4s] ease-in-out text-[#fdfeff] group-hover:max-w-[140px]">
-                    Email
+                    Quora
                   </span>
                 </a>
               </div>

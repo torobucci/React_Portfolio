@@ -10,6 +10,12 @@ export default {
         validation: (Rule) => Rule.required(),
       },
       {
+        name: 'category',
+        category: 'Category',
+        type:'string',
+        validation: (Rule) => Rule.required(),
+      },
+      {
         name: 'images',
         title: 'Images',
         type: 'array',

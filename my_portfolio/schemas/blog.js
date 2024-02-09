@@ -10,6 +10,18 @@ export default {
         validation: Rule => Rule.required(),
       },
       {
+        name: 'author',
+        title: 'Author Name',
+        type: 'string',
+        validation: Rule => Rule.required(),
+      },
+      {
+        name: 'authorLink',
+        title: 'Author Link',
+        type: 'string',
+        validation: Rule => Rule.required(),
+      },
+      {
         name: 'dateWritten',
         title: 'Date Written',
         type: 'date',

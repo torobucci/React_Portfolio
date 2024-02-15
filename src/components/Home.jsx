@@ -5,7 +5,7 @@ import { FaMedium } from "react-icons/fa6";
 const Home = () => {
   return (
     <section id="home">
-      <div className="w-full h-screen flex items-center bg-[url('./src/assets/hero-bg-2.jpg')] bg-cover bg-no-repeat">
+      <div className="w-full h-screen flex items-center bg-[url('./src/assets/bg.jpg')] bg-cover bg-no-repeat">
         <div className="flex flex-col gap-0 justify-center items-center font-inter text-white mx-auto px-4 sm:max-w-lg mds:max-w-xlg lg:max-w-xl xlg:max-w-3xl">
           <h1 className="text-[#fdfeff] text-[40px] text-center font-semibold xlg:text-[60px]">
             Hi I'm <span className="text-yellowish">Kevin Toro</span>

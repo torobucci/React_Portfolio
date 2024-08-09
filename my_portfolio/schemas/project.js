@@ -28,11 +28,12 @@ export default {
         validation: (Rule) => Rule.required(),
       },
       {
-        name: 'techStack',
-        title: 'Tech Stack',
-        type: 'array',
-        of: [{ type: 'string' }],
+        name: 'rating',
+        title:'Rating',
+        type:'number',
+        validation: (Rule) => Rule.required(),
       },
+
       {
         name: 'githubLink',
         title: 'GitHub Link',

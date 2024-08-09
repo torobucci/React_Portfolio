@@ -61,10 +61,10 @@ export default function Portfolio() {
                       </p>
                     </div>
                     <div className="flex gap-6 mt-4 self-end">
-                      <a href={project.githubLink} className="border-[2px] border-white border-opacity-10 hover:border-opacity-[0.5] p-2.5 rounded-full">
+                      <a target="_blank" href={project.githubLink} className="border-[2px] border-white border-opacity-10 hover:border-opacity-[0.5] p-2.5 rounded-full">
                         <FaGithub className="text-yellowish" />
                       </a>
-                      <a href={project.liveVersionLink} className="border-[2px] border-white border-opacity-10 hover:border-opacity-[0.5] p-2.5 rounded-full">
+                      <a target="_blank" href={project.liveVersionLink} className="border-[2px] border-white border-opacity-10 hover:border-opacity-[0.5] p-2.5 rounded-full">
                         <FaExternalLinkAlt className="text-yellowish" />
                       </a>
                     </div>

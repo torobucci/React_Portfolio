@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -27,13 +27,16 @@ function App() {
   return (
     <Router>
       <Navbar scrollPosition={scrollPosition} />
-      <Home />
-      <About />
-      <Resume />
-      <Portfolio />
-      <Reviews />
-      <Blog />
-      <Contact />
+       
+       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/projects" element={<Portfolio />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+       </Routes>
       <Footer />
     </Router>
   );

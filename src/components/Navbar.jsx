@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Fade as Hamburger } from "hamburger-react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { PiFlowerLotusFill } from "react-icons/pi";
 
 const Navbar = ({ scrollPosition }) => {
@@ -39,7 +39,7 @@ const Navbar = ({ scrollPosition }) => {
           } bg-[#070d1b] font-inter  capitalize text-[14px] text-[#a9adb8] pl-5 overflow-hidden transition-max-h duration-700 ease-in-out flex absolute top-16 lg:static flex-col lg:flex-row gap-3 lg:gap-10 lg:items-center justify-center bg-slate-900 w-full lg:overflow-visible`}
         >
           <Link
-            to="home"
+            to="/"
             spy={true}
             smooth={true}
             offset={-68}

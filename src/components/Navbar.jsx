@@ -11,17 +11,9 @@ const Navbar = ({ scrollPosition }) => {
   const navbarClass = isScrolled ? "bg-[#070d1b]" : "bg-transparent";
   return (
     <div
-      className={`${navbarClass} w-full fixed flex flex-col lg:flex-row justify-between py-4 z-20 transition-all duration-[.5s] ease-in-out`}
+      className={`${navbarClass}  fixed right-3 top-4 bg-gray-200 text-body_color rounded-lg flex flex-col  justify-between p-4 z-20 transition-all duration-[.5s] ease-in-out`}
     >
-      <div className="ml-2 mds:ml-6 lg:ml-14 flex gap-2 items-center max-h-[40px]">
-        <div className="border-white rounded-full border-[3px] pt-[2px] pr-[2px] pl-[2px]">
-          {" "}
-          <PiFlowerLotusFill className="text-yellowish text-[25px] md:text-[30px] mt-[3px]" />
-        </div>
-        <p className="text-[32px] md:text-[38px] text-white font-medium">
-          <span className="capitalize text-yellowish">K</span>evin
-        </p>
-      </div>
+     
       <div className="lg:flex items-center lg:mr-14">
         <div className="lg:hidden cursor-pointer absolute top-3 right-1.5">
           <Hamburger
@@ -115,7 +107,7 @@ const Navbar = ({ scrollPosition }) => {
           >
             Contact
           </Link>
-          <li className="hidden lg:contents">+254 798 555 929</li>
+         
         </ul>
       </div>
     </div>

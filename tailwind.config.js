@@ -11,6 +11,7 @@ module.exports = withMT({
       colors: {
         yellowish: '#fec544',
         body_color: '#0a101e',
+        text_color: '#a9adb8',
         about: 'rgba(21, 27, 41, 0.5)',
         popup:'rgb(10, 16, 30, 0.85) '
 

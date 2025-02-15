@@ -32,84 +32,93 @@ const Navbar = ({ scrollPosition }) => {
         >
           <NavLink
             to="/"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-            className={isActive =>
-              "border-b border-b-yellowish"
+           
+            className={({ isActive }) =>
+              `${isActive? 'border-b border-b-yellowish':' border-none'}`
             }
             onClick={() => setIsMenuOpen(false)}
     
           >
             Home
           </NavLink>
-          <Link
+          <NavLink
             to="about"
             spy={true}
             smooth={true}
             offset={-68}
             duration={500}
-            className="cursor-pointer"
+            className={({ isActive }) =>
+              `${isActive? 'border-b border-b-yellowish':''}`
+            }
             onClick={() => setIsMenuOpen(false)}
           >
             About
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="resume"
             spy={true}
             smooth={true}
             offset={-68}
             duration={500}
-            className="cursor-pointer"
+             className={({ isActive }) =>
+              `${isActive? 'border-b border-b-yellowish':''}`
+            }
             onClick={() => setIsMenuOpen(false)}
           >
             Resume
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="projects"
             spy={true}
             smooth={true}
             offset={-68}
             duration={500}
-            className="cursor-pointer"
+             className={({ isActive }) =>
+              `${isActive? 'border-b border-b-yellowish':''}`
+            }
             onClick={() => setIsMenuOpen(false)}
           >
             Projects
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="reviews"
             spy={true}
             smooth={true}
             offset={-68}
             duration={500}
-            className="cursor-pointer"
+             className={({ isActive }) =>
+              `${isActive? 'border-b border-b-yellowish':''}`
+            }
             onClick={() => setIsMenuOpen(false)}
           >
             Reviews
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="blog"
             spy={true}
             smooth={true}
             offset={-68}
             duration={500}
-            className="cursor-pointer"
+             className={({ isActive }) =>
+              `${isActive? 'border-b border-b-yellowish':''} `
+            }
             onClick={() => setIsMenuOpen(false)}
           >
             Blog
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="contact"
             spy={true}
             smooth={true}
             offset={-68}
             duration={500}
-            className="cursor-pointer"
+             className={({ isActive }) =>
+              `${isActive? 'border-b border-b-yellowish':''}`
+            }
             onClick={() => setIsMenuOpen(false)}
           >
             Contact
-          </Link>
+          </NavLink>
          
         </ul>
       </div>

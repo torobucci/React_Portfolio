@@ -11,10 +11,17 @@ const Navbar = ({ scrollPosition }) => {
   const navbarClass = isScrolled ? "bg-[#070d1b]" : "bg-transparent";
   return (
     <div
-      className={`${navbarClass}  fixed w-full bg-body_color text-gray-500  flex   justify-between p-4 z-20 transition-all duration-[.5s] ease-in-out`}
+      className={`${navbarClass}  w-full fixed flex flex-col lg:flex-row justify-between py-4 px-4 md:px-7 lg:px-14 z-20 transition-all duration-[.5s] ease-in-out`}
     >
-      <h3 className="text-xl lg:text-[32px] text-white font-bold">Kevin Toro</h3>
-      <div className="lg:flex items-center lg:mr-14">
+      <NavLink to="/" className="flex gap-2 items-center max-h-[40px] cursor-pointer">
+        <p className="text-[32px] md:text-[38px] text-white font-medium">
+          <span className="capitalize text-yellowish">K</span>evin
+        </p>
+        <p className="text-[32px] md:text-[38px] text-white font-medium">
+          <span className="capitalize text-yellowish">T</span>oro
+        </p>
+      </NavLink>
+      <div className="">
         <div className="lg:hidden cursor-pointer absolute top-3 right-1.5">
           <Hamburger
             toggled={isMenuOpen}
@@ -26,42 +33,14 @@ const Navbar = ({ scrollPosition }) => {
         </div>
 
         <ul
-          className={`${
-            isMenuOpen ? "max-h-screen py-4" : "max-h-0"
-          } bg-transparent font-inter  capitalize text-[14px] text-text_color pl-5 overflow-hidden transition-max-h duration-700 ease-in-out flex absolute top-16 lg:static flex-col lg:flex-row gap-3 lg:gap-10 lg:items-center justify-center bg-slate-900 w-full py-6 px-3 rounded-3xl`}
+          className={`${isMenuOpen ? "max-h-screen py-4" : "max-h-0"
+            } bg-transparent font-inter  capitalize text-[14px] text-text_color pl-5 overflow-hidden transition-max-h duration-700 ease-in-out flex absolute top-16 lg:static flex-col lg:flex-row gap-3 lg:gap-10 lg:items-center justify-center bg-slate-900 w-full py-6 px-3 rounded-3xl`}
         >
           <NavLink
-            to="/"
-           
-            className={({ isActive }) =>
-              `${isActive? 'border-b border-b-yellowish':' border-none'}`
-            }
-            onClick={() => setIsMenuOpen(false)}
-    
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-            className={({ isActive }) =>
-              `${isActive? 'border-b border-b-yellowish':''}`
-            }
-            onClick={() => setIsMenuOpen(false)}
-          >
-            About
-          </NavLink>
-          <NavLink
             to="resume"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-             className={({ isActive }) =>
-              `${isActive? 'border-b border-b-yellowish':''}`
+
+            className={({ isActive }) =>
+              `${isActive ? 'border-b border-b-yellowish' : ''}`
             }
             onClick={() => setIsMenuOpen(false)}
           >
@@ -69,57 +48,27 @@ const Navbar = ({ scrollPosition }) => {
           </NavLink>
           <NavLink
             to="projects"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-             className={({ isActive }) =>
-              `${isActive? 'border-b border-b-yellowish':''}`
+
+            className={({ isActive }) =>
+              `${isActive ? 'border-b border-b-yellowish' : ''}`
             }
             onClick={() => setIsMenuOpen(false)}
           >
             Projects
           </NavLink>
-          <NavLink
-            to="reviews"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-             className={({ isActive }) =>
-              `${isActive? 'border-b border-b-yellowish':''}`
-            }
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Reviews
-          </NavLink>
+
           <NavLink
             to="blog"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-             className={({ isActive }) =>
-              `${isActive? 'border-b border-b-yellowish':''} `
+
+            className={({ isActive }) =>
+              `${isActive ? 'border-b border-b-yellowish' : ''} `
             }
             onClick={() => setIsMenuOpen(false)}
           >
             Blog
           </NavLink>
-          <NavLink
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-             className={({ isActive }) =>
-              `${isActive? 'border-b border-b-yellowish':''}`
-            }
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Contact
-          </NavLink>
-         
+
+
         </ul>
       </div>
     </div>

@@ -25,17 +25,17 @@ const Resume = () => {
             </div>
             <div className="relative pl-10 ml-5 border-l-[1px] border-l-[#232935] before:absolute before:border-[2px] before:border-[#232935] before:rounded-full before:bg-[#101624] before:w-[13px] before:h-[13px] before:-top-[12px] before:-left-[7px] before:transition-all before:ease-in-out before:duration-[0.4s] hover:before:bg-[#fec544]">
               <h3 className="text-[24px] font-normal text-[#fec544] relative -top-[22px] -mb-4">
-                Full-stack developer
+                Front End Engineer Freelancer, Upwork
               </h3>
-              <p className="text-[18px] mb-5 text-[#a9adb8] font-normal leading-[1.6em]">
+              <p className="text-[18px] mb-5 text-[#fdfeff] font-normal leading-[1.6em]">
                 Jan 2020 - Present
               </p>
-              <h4 className="text-[20px] mb-[19px] text-[#fdfeff] font-normal">
-                Freelancer, Upwork & Fiverr
-              </h4>
-              <p className="text-[14px] md:text-[16px] text-[#a9adb8] pb-10">
-                Turn web designs to real-world front end of apps using React and TailwindCSS.
-              </p>
+
+              <ul className="list-disc text-[#a9adb8] pl-5">
+                <li><p className="text-[14px] md:text-[16px]  pb-10">
+                  Developed a modern E-commerce platform, Shop.Co(https://shop-co-sigma.vercel.app), specifically tailored for clothing shops. Leveraged Next.js Page Router to optimize performance, reducing initial page load time by 40%, leading to a smooth browsing experience. Used TypeScript to enhance code quality, catching 90% of potential bugs during development. Delivered the project within one week, exceeding the client’s expectations and enabling a faster go-to-market strategy.
+                </p></li>
+              </ul>
             </div>
             <div className="relative pl-10 ml-5 border-l-[1px] border-l-[#232935] before:absolute before:border-[2px] before:border-[#232935] before:rounded-full before:bg-[#101624] before:w-[13px] before:h-[13px] before:-top-[12px] before:-left-[7px] before:transition-all before:ease-in-out before:duration-[0.4s] hover:before:bg-[#fec544]">
               <h3 className="text-[24px] font-normal text-[#fec544] relative -top-[22px] -mb-4">

@@ -32,10 +32,46 @@ const Resume = () => {
               </p>
 
               <ul className="list-disc text-[#a9adb8] pl-5">
-                <li><p className="text-[14px] md:text-[16px]  pb-10">
-                  Developed a modern E-commerce platform, Shop.Co(https://shop-co-sigma.vercel.app), specifically tailored for clothing shops. Leveraged Next.js Page Router to optimize performance, reducing initial page load time by 40%, leading to a smooth browsing experience. Used TypeScript to enhance code quality, catching 90% of potential bugs during development. Delivered the project within one week, exceeding the client’s expectations and enabling a faster go-to-market strategy.
-                </p></li>
+                <li className="pb-10">
+                  <p className="text-[14px] md:text-[16px]">
+                    Developed for a client, a modern E-commerce platform,
+                    <a href="https://shop-co-sigma.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+                      Shop.Co
+                    </a>, specifically tailored for clothing shops.
+                  </p>
+                  <ul className="list-[circle] text-[#a9adb8] pl-5">
+                    <li className="pb-1 text-[14px] md:text-[16px]">
+                      Optimized page load performance by implementing lazy loading, code splitting, and static generation with Next.js, reducing initial page load time by 40%.
+                    </li>
+                    <li className="pb-1 text-[14px] md:text-[16px]">
+                      Leveraged server-side rendering (SSR) where necessary to improve content delivery speed, ensuring a seamless browsing experience.
+                    </li>
+                    <li className="pb-1 text-[14px] md:text-[16px]">
+                      Used TypeScript to enhance code quality, catching 90% of potential bugs during development.
+                    </li>
+                  </ul>
+                </li>
+                <li className="pb-10">
+                  <p className="text-[14px] md:text-[16px]">
+                    Developed Fintrac Dashboard, an interactive financial management platform for a client, designed to efficiently track invoices and manage customer lists.
+                  </p>
+                  <ul className="list-[circle] text-[#a9adb8] pl-5">
+                    <li className="pb-1 text-[14px] md:text-[16px]">
+                      Built with React.js, ensuring a smooth and responsive user experience.
+                    </li>
+                    <li className="pb-1 text-[14px] md:text-[16px]">
+                      Implemented real-time updates and data visualization to enhance financial insights.
+                    </li>
+                    <li className="pb-1 text-[14px] md:text-[16px]">
+                      Achieved a 100% Lighthouse accessibility score, ensuring an inclusive and user-friendly design.
+                    </li>
+                    <li className="pb-1 text-[14px] md:text-[16px]">
+                      Client praised the intuitive UI and efficient data management, significantly improving business operations.
+                    </li>
+                  </ul>
+                </li>
               </ul>
+
             </div>
             <div className="relative pl-10 ml-5 border-l-[1px] border-l-[#232935] before:absolute before:border-[2px] before:border-[#232935] before:rounded-full before:bg-[#101624] before:w-[13px] before:h-[13px] before:-top-[12px] before:-left-[7px] before:transition-all before:ease-in-out before:duration-[0.4s] hover:before:bg-[#fec544]">
               <h3 className="text-[24px] font-normal text-[#fec544] relative -top-[22px] -mb-4">

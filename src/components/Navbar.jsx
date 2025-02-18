@@ -11,7 +11,7 @@ const Navbar = ({ scrollPosition }) => {
   const navbarClass = isScrolled ? "bg-[#070d1b]" : "bg-transparent";
   return (
     <div
-      className={`${navbarClass}  w-full fixed flex flex-col lg:flex-row justify-between py-4 px-4 md:px-7 lg:px-14 z-20 transition-all duration-[.5s] ease-in-out`}
+      className={`${navbarClass}  w-full fixed flex flex-col lg:flex-row justify-between py-4 px-4 md:px-7 lg:px-28 z-20 transition-all duration-[.5s] ease-in-out`}
     >
       <NavLink to="/" className="flex gap-2 items-center max-h-[40px] cursor-pointer">
         <p className="text-[32px] md:text-[38px] text-white font-medium">

@@ -11,9 +11,9 @@ const Home = () => {
             Hi I'm <span className="text-yellowish">Kevin Toro</span>
           </h1>
           <p className="sm:text-[16px] lg:text-[18px] font-light text-[#a9adb8] text-center mb-[22px]">
-            I'm a full-stack developer proficient in react, ruby on rails,
-            bootstrap and tailwind. I can help you develop a fully functional
-            full-stack app with efficient UI.
+            A Passionate and detail-oriented Front-End Engineer, specializing in Next.js  for building fast, SEO-optimized, and user-friendly applications. 
+            I thrive in dynamic environments where collaboration and problem-solving are key to driving innovation. 
+            I'm eager to contribute to the development of high-performance softwares.
           </p>
           <div className="flex flex-row gap-4">
             <a

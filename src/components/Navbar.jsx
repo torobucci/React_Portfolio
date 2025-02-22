@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Fade as Hamburger } from "hamburger-react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { PiFlowerLotusFill } from "react-icons/pi";
 
 const Navbar = ({ scrollPosition }) => {
@@ -11,18 +11,17 @@ const Navbar = ({ scrollPosition }) => {
   const navbarClass = isScrolled ? "bg-[#070d1b]" : "bg-transparent";
   return (
     <div
-      className={`${navbarClass} w-full fixed flex flex-col lg:flex-row justify-between py-4 z-20 transition-all duration-[.5s] ease-in-out`}
+      className={`${navbarClass}  w-full fixed flex flex-col lg:flex-row justify-between py-4 px-4 md:px-7 lg:px-28 z-20 transition-all duration-[.5s] ease-in-out`}
     >
-      <div className="ml-2 mds:ml-6 lg:ml-14 flex gap-2 items-center max-h-[40px]">
-        <div className="border-white rounded-full border-[3px] pt-[2px] pr-[2px] pl-[2px]">
-          {" "}
-          <PiFlowerLotusFill className="text-yellowish text-[25px] md:text-[30px] mt-[3px]" />
-        </div>
+      <NavLink to="/" className="flex gap-2 items-center max-h-[40px] cursor-pointer">
         <p className="text-[32px] md:text-[38px] text-white font-medium">
           <span className="capitalize text-yellowish">K</span>evin
         </p>
-      </div>
-      <div className="lg:flex items-center lg:mr-14">
+        <p className="text-[32px] md:text-[38px] text-white font-medium">
+          <span className="capitalize text-yellowish">T</span>oro
+        </p>
+      </NavLink>
+      <div className="">
         <div className="lg:hidden cursor-pointer absolute top-3 right-1.5">
           <Hamburger
             toggled={isMenuOpen}
@@ -34,88 +33,42 @@ const Navbar = ({ scrollPosition }) => {
         </div>
 
         <ul
-          className={`${
-            isMenuOpen ? "max-h-screen py-4" : "max-h-0"
-          } bg-[#070d1b] font-inter  capitalize text-[14px] text-[#a9adb8] pl-5 overflow-hidden transition-max-h duration-700 ease-in-out flex absolute top-16 lg:static flex-col lg:flex-row gap-3 lg:gap-10 lg:items-center justify-center bg-slate-900 w-full lg:overflow-visible`}
+          className={`${isMenuOpen ? "max-h-screen py-4" : "max-h-0"
+            } bg-transparent font-inter  capitalize text-[14px] text-text_color pl-5 overflow-hidden transition-max-h duration-700 ease-in-out flex absolute top-16 lg:static flex-col lg:flex-row gap-3 lg:gap-10 lg:items-center justify-center bg-slate-900 w-full py-6 px-3 rounded-3xl`}
         >
-          <Link
-            to="/"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-            className="cursor-pointer"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-            className="cursor-pointer"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            About
-          </Link>
-          <Link
+          <NavLink
             to="resume"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-            className="cursor-pointer"
+
+            className={({ isActive }) =>
+              `${isActive ? ' before:w-full' : 'before:w-0'} relative before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
+            }
             onClick={() => setIsMenuOpen(false)}
           >
             Resume
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="projects"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-            className="cursor-pointer"
+
+            className={({ isActive }) =>
+              `${isActive ? ' before:w-full' : 'before:w-0'} relative before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
+            }
             onClick={() => setIsMenuOpen(false)}
           >
             Projects
-          </Link>
-          <Link
-            to="reviews"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-            className="cursor-pointer"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Reviews
-          </Link>
-          <Link
+          </NavLink>
+
+          <NavLink
             to="blog"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-            className="cursor-pointer"
+
+            className={({ isActive }) =>
+              `${isActive ? ' before:w-full' : 'before:w-0'} relative before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
+            }
             onClick={() => setIsMenuOpen(false)}
           >
             Blog
-          </Link>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-68}
-            duration={500}
-            className="cursor-pointer"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Contact
-          </Link>
-          <li className="hidden lg:contents">+254 798 555 929</li>
+          </NavLink>
+
+
         </ul>
       </div>
     </div>

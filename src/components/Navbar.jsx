@@ -40,7 +40,7 @@ const Navbar = ({ scrollPosition }) => {
             to="resume"
 
             className={({ isActive }) =>
-              `${isActive ? 'border-b border-b-yellowish' : ''}`
+              `${isActive ? ' before:w-full' : 'before:w-0'} relative before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
             }
             onClick={() => setIsMenuOpen(false)}
           >
@@ -50,7 +50,7 @@ const Navbar = ({ scrollPosition }) => {
             to="projects"
 
             className={({ isActive }) =>
-              `${isActive ? 'border-b border-b-yellowish' : ''}`
+              `${isActive ? ' before:w-full' : 'before:w-0'} relative before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
             }
             onClick={() => setIsMenuOpen(false)}
           >
@@ -61,7 +61,7 @@ const Navbar = ({ scrollPosition }) => {
             to="blog"
 
             className={({ isActive }) =>
-              `${isActive ? 'border-b border-b-yellowish' : ''} `
+              `${isActive ? ' before:w-full' : 'before:w-0'} relative before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
             }
             onClick={() => setIsMenuOpen(false)}
           >

@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Skeleton } from "@mui/material"; // Import Skeleton
 
 const Blog = () => {
-  const [blogs, setBlogs] = useState(null);
+  const [blogs, setBlogs] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // Track loading state
 
   useEffect(() => {

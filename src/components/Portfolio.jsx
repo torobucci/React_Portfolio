@@ -29,11 +29,11 @@ export default function Portfolio() {
         <div className="px-[15px] mx-auto items-center justify-center flex flex-wrap gap-5">
           {isLoading ? [...Array(5)].map((_, i) =>
             <div
-            className="flex flex-col lg:flex-row p-4 gap-8 border border-[#232935] rounded-lg max-w-[600px] w-full"
+            className="flex flex-col lg:flex-row p-4 gap-8 border border-[#232935] rounded-lg max-w-[455px] w-full"
             key={i}
           >
             {/* Image Skeleton (Ensures it matches actual image size) */}
-            <div className="w-full sm:max-w-[316px] lg:max-w-[230px] h-[200px]">
+            <div className="w-full sm:max-w-[316px] lg:max-w-[230px] h-[180px]">
               <Skeleton sx={{bgcolor:'#33373E', borderRadius:'0.5rem'}} variant="rectangular" height='100%' width="100%" animation="wave" />
             </div>
 

@@ -69,9 +69,9 @@ const Blog = () => {
             ? // Show Skeletons while loading
               [...Array(3)].map((_, i) => (
                 <div className="w-full flex flex-col gap-[15px] px-[15px]" key={i}>
-                  <Skeleton sx={{bgcolor:'#33373E'}} variant="rectangular" height={200} animation="wave" />
-                  <Skeleton sx={{bgcolor:'#33373E'}} variant="text" width="50%" animation="wave" />
-                  <Skeleton sx={{bgcolor:'#33373E'}} variant="text" width="80%" animation="wave" />
+                  <Skeleton sx={{bgcolor:'#33373E'}} variant="rectangular" height={300} animation="wave" />
+                  <Skeleton sx={{bgcolor:'#33373E', marginBottom:'9px'}} variant="text" width="50%" animation="wave" />
+                  <Skeleton sx={{bgcolor:'#33373E', fontSize:'18px'}} variant="text" width="80%" animation="wave" />
                 </div>
               ))
             : // Show actual blog posts
@@ -81,7 +81,7 @@ const Blog = () => {
                     <img
                       src={urlFor(blog.image).url()}
                       alt="blog image"
-                      className="w-full group-hover:scale-[1.07] transition-all duration-[.4s] ease-in-out"
+                      className="align-middle w-full group-hover:scale-[1.07] transition-all duration-[.4s] ease-in-out"
                     />
                   </a>
                   <div>

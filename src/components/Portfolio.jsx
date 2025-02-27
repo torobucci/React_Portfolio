@@ -33,12 +33,13 @@ export default function Portfolio() {
             key={i}
           >
             {/* Image Skeleton (Ensures it matches actual image size) */}
-            <div className="w-full sm:max-w-[316px] lg:max-w-[230px] sm:max-h-[280px]">
-              <Skeleton sx={{bgcolor:'#33373E'}} variant="rectangular" height='280px' width="100%" animation="wave" />
+            <div className="w-full sm:max-w-[316px] lg:max-w-[230px] h-[200px]">
+              <Skeleton sx={{bgcolor:'#33373E', borderRadius:'0.5rem'}} variant="rectangular" height='100%' width="100%" animation="wave" />
             </div>
 
             {/* Content Skeletons */}
-            <div className="flex flex-col justify-between flex-grow items-center">
+            <div className="flex flex-col justify-between flex-grow items-center sm:max-w-[316px] lg:max-w-none">
+              
               <Skeleton sx={{bgcolor:'#33373E'}}   variant="text" width="50%" height={24} animation="wave" />
               <Skeleton sx={{bgcolor:'#33373E',fontSize:'1rem', lineHeight:'1.5em'}} variant="text" width="100%" height={20} animation="wave" />
               

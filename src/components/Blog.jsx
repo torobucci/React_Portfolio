@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useQuery } from "@tanstack/react-query";
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import Slider from "react-slick";
@@ -7,22 +7,16 @@ import "slick-carousel/slick/slick-theme.css";
 import { Skeleton } from "@mui/material"; // Import Skeleton
 
 const Blog = () => {
-  const [blogs, setBlogs] = useState([]);
-  const [isLoading, setIsLoading] = useState(true); // Track loading state
-
-  useEffect(() => {
-    const query = '*[_type == "blog"]';
-    sanityClient
-      .fetch(query)
-      .then((result) => {
-        setBlogs(result);
-        setIsLoading(false); // Set loading to false after fetching
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-        setIsLoading(false);
-      });
-  }, []);
+  
+  const { data: blogs, isLoading, error } = useQuery({
+    queryKey: ["blog"],
+    queryFn: async () => {
+      const result = await sanityClient.fetch('*[_type == "blog"]');
+      return result.sort((a, b) => b.rating - a.rating);
+    },
+  });
+   
+  if (error) return <p>Error fetching blogs.</p>;
 
   const builder = imageUrlBuilder(sanityClient);
   function urlFor(source) {
@@ -75,9 +69,9 @@ const Blog = () => {
             ? // Show Skeletons while loading
               [...Array(3)].map((_, i) => (
                 <div className="w-full flex flex-col gap-[15px] px-[15px]" key={i}>
-                  <Skeleton variant="rectangular" height={200} animation="wave" />
-                  <Skeleton variant="text" width="50%" animation="wave" />
-                  <Skeleton variant="text" width="80%" animation="wave" />
+                  <Skeleton sx={{bgcolor:'#33373E'}} variant="rectangular" height={200} animation="wave" />
+                  <Skeleton sx={{bgcolor:'#33373E'}} variant="text" width="50%" animation="wave" />
+                  <Skeleton sx={{bgcolor:'#33373E'}} variant="text" width="80%" animation="wave" />
                 </div>
               ))
             : // Show actual blog posts

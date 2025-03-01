@@ -34,7 +34,7 @@ const Navbar = ({ scrollPosition }) => {
 
         <ul
           className={`${isMenuOpen ? "max-h-screen py-4 " : "max-h-0"
-            } font-inter bg-body_color  capitalize text-[14px] text-text_color overflow-hidden transition-[max-height] duration-700 ease-in-out flex absolute top-16 left-0 lg:static flex-col lg:flex-row gap-3 lg:gap-10 lg:items-center justify-center  w-full py-6 px-3`}
+            } font-inter bg-body_color lg:bg-transparent  capitalize text-[14px] text-text_color overflow-hidden transition-[max-height] duration-700 ease-in-out flex absolute top-16 left-0 lg:static flex-col lg:flex-row gap-3 lg:gap-10 lg:items-center justify-center  w-full py-6 px-3`}
         >
           <NavLink
             to="resume"

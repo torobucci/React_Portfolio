@@ -33,14 +33,14 @@ const Navbar = ({ scrollPosition }) => {
         </div>
 
         <ul
-          className={`${isMenuOpen ? "max-h-screen" : "max-h-0"
+          className={`${isMenuOpen ? "max-h-screen" : "max-h-0 lg:max-h-max"
             } font-inter bg-body_color lg:bg-transparent  capitalize text-[14px] text-text_color overflow-hidden transition-[max-height] duration-700 ease-in-out flex absolute top-16 left-0 lg:static flex-col lg:flex-row lg:gap-10 lg:items-center justify-center  w-full`}
         >
           <NavLink
             to="resume"
 
             className={({ isActive }) =>
-              `${isActive ? ' before:w-full' : 'before:w-0'} relative ml-4 lg:ml-0 my-2 lg:my-0 w-max before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
+              `${isActive ? ' before:w-full' : 'before:w-0'} relative ml-4 lg:ml-0 my-2 w-max before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
             }
             onClick={() => setIsMenuOpen(false)}
           >
@@ -50,7 +50,7 @@ const Navbar = ({ scrollPosition }) => {
             to="projects"
 
             className={({ isActive }) =>
-              `${isActive ? ' before:w-full' : 'before:w-0'} relative ml-4 lg:ml-0 my-2 lg:my-0 w-max before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
+              `${isActive ? ' before:w-full' : 'before:w-0'} relative ml-4 lg:ml-0 my-2 w-max before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
             }
             onClick={() => setIsMenuOpen(false)}
           >
@@ -61,7 +61,7 @@ const Navbar = ({ scrollPosition }) => {
             to="blog"
 
             className={({ isActive }) =>
-              `${isActive ? ' before:w-full' : 'before:w-0'} relative ml-4 lg:ml-0 my-2 lg:my-0 w-max before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
+              `${isActive ? ' before:w-full' : 'before:w-0'} relative ml-4 lg:ml-0 my-2 w-max before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
             }
             onClick={() => setIsMenuOpen(false)}
           >

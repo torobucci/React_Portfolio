@@ -9,10 +9,14 @@ import Reviews from "./components/Reviews";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+// Create a new QueryClient instance
+const queryClient = new QueryClient();
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
-  
+
   const handleScroll = () => {
     setScrollPosition(window.scrollY);
   };
@@ -25,19 +29,22 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <Navbar scrollPosition={scrollPosition} />
-       
-       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Portfolio />} />
-        <Route path="/blog" element={<Blog />} />
-      
-       </Routes>
-      <Footer />
-    </Router>
+    <QueryClientProvider client={queryClient}>
+      <Router>
+        <Navbar scrollPosition={scrollPosition} />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/projects" element={<Portfolio />} />
+          <Route path="/blog" element={<Blog />} />
+
+        </Routes>
+        <Footer />
+      </Router>
+    </QueryClientProvider>
+
   );
 }
 

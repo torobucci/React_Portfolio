@@ -13,7 +13,7 @@ const Navbar = ({ scrollPosition }) => {
     <div
       className={`${navbarClass}  w-full fixed flex flex-col lg:flex-row justify-between py-4 px-4 md:px-7 lg:px-28 z-20 transition-all duration-[.5s] ease-in-out`}
     >
-      <NavLink to="/" className="flex gap-2 items-center max-h-[40px] cursor-pointer">
+      <NavLink to="/" className="flex gap-2 items-center max-h-[40px] cursor-pointer"  onClick={() => setIsMenuOpen(false)}>
         <p className="text-[32px] md:text-[38px] text-white font-medium">
           <span className="capitalize text-yellowish">K</span>evin
         </p>
@@ -33,14 +33,14 @@ const Navbar = ({ scrollPosition }) => {
         </div>
 
         <ul
-          className={`${isMenuOpen ? "max-h-screen py-4 " : "max-h-0"
-            } font-inter bg-body_color lg:bg-transparent  capitalize text-[14px] text-text_color overflow-hidden transition-[max-height] duration-700 ease-in-out flex absolute top-16 left-0 lg:static flex-col lg:flex-row gap-3 lg:gap-10 lg:items-center justify-center  w-full py-6 px-3`}
+          className={`${isMenuOpen ? "max-h-screen" : "max-h-0"
+            } font-inter bg-body_color lg:bg-transparent  capitalize text-[14px] text-text_color overflow-hidden transition-[max-height] duration-700 ease-in-out flex absolute top-16 left-0 lg:static flex-col lg:flex-row lg:gap-10 lg:items-center justify-center  w-full`}
         >
           <NavLink
             to="resume"
 
             className={({ isActive }) =>
-              `${isActive ? ' before:w-full' : 'before:w-0'} relative w-max before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
+              `${isActive ? ' before:w-full' : 'before:w-0'} relative ml-4 lg:ml-0 my-2 lg:my-0 w-max before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
             }
             onClick={() => setIsMenuOpen(false)}
           >
@@ -50,7 +50,7 @@ const Navbar = ({ scrollPosition }) => {
             to="projects"
 
             className={({ isActive }) =>
-              `${isActive ? ' before:w-full' : 'before:w-0'} relative w-max before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
+              `${isActive ? ' before:w-full' : 'before:w-0'} relative ml-4 lg:ml-0 my-2 lg:my-0 w-max before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
             }
             onClick={() => setIsMenuOpen(false)}
           >
@@ -61,7 +61,7 @@ const Navbar = ({ scrollPosition }) => {
             to="blog"
 
             className={({ isActive }) =>
-              `${isActive ? ' before:w-full' : 'before:w-0'} relative w-max before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
+              `${isActive ? ' before:w-full' : 'before:w-0'} relative ml-4 lg:ml-0 my-2 lg:my-0 w-max before:absolute before:content-[""] before:left-0 before:-bottom-1  before:h-[1px] before:bg-yellowish before:transition-['width'] before:duration-300 before:ease-in-out before:hover:w-full`
             }
             onClick={() => setIsMenuOpen(false)}
           >
